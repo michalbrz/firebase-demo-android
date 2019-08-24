@@ -1,0 +1,19 @@
+<resources>
+    <string name="dev_key">aHR0cHM6Ly9maXJlYmFzZS1kZW1vLWFwcC5nbGl0Y2gubWUvdGVzdC5odG1s</string>
+    <string name="app_name">Demo Store</string>
+    <string name="dialog_added_cart">Product successfully added to cart</string>
+    <string name="view_cart">View Cart</string>
+    <string name="continue_shop">Continue Shopping</string>
+    <string name="item_not_found">The requested item does not exist</string>
+    <string name="page_not_found">The requested page does not exist</string>
+    <string name="cart_is_empty">The cart is empty.</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="see_all_btn">See All</string>
+    <string-array name="quantity_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>

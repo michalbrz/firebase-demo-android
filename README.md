@@ -1,4 +1,4 @@
-# firebase-hackathon-android
+# firebase-demo-android
 Demo app for implementing Firebase SDK analytics and App Links
 
 ### Events
