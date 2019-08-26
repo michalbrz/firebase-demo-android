@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         renderProducts(NEW_ARRIVAL, newArrivalView);
         RecyclerView recommendView = findViewById(R.id.recommendation_view);
         renderProducts(RECOMMENDATION, recommendView);
+
+//        new GenderSelectionDialog(this).showIfNecessary();
     }
 
     private void renderProducts(Section section, RecyclerView view) {
