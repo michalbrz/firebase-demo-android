@@ -12,21 +12,17 @@ class GenderSelectionDialog {
     private static final String GENDER_PREF_KEY = "gender_pref_key";
 
     private Context context;
-    private SharedPreferences sharedPreferences;
 
     GenderSelectionDialog(Context context) {
         this.context = context;
-        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
     }
 
-    void showIfNecessary() {
-        if (!sharedPreferences.contains(GENDER_PREF_KEY)) {
-            new AlertDialog.Builder(context)
-                    .setTitle("Select clothes to display")
-                    .setItems(GENDERS, (dialog, which) -> saveGenderSelection(GENDERS[which]))
-                    .create()
-                    .show();
-        }
+    void show() {
+        new AlertDialog.Builder(context)
+                .setTitle("Select clothes to display")
+                .setItems(GENDERS, (dialog, which) -> saveGenderSelection(GENDERS[which]))
+                .create()
+                .show();
     }
 
     private void saveGenderSelection(String gender) {

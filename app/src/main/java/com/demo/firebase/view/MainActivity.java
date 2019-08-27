@@ -3,6 +3,8 @@ package com.demo.firebase.view;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,8 +33,19 @@ public class MainActivity extends AppCompatActivity {
         renderProducts(NEW_ARRIVAL, newArrivalView);
         RecyclerView recommendView = findViewById(R.id.recommendation_view);
         renderProducts(RECOMMENDATION, recommendView);
+    }
 
-//        new GenderSelectionDialog(this).showIfNecessary();
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // settings is the only option for now
+        new GenderSelectionDialog(this).show();
+        return true;
     }
 
     private void renderProducts(Section section, RecyclerView view) {
