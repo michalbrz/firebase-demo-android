@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // settings is the only option for now
-        new GenderSelectionDialog(this).show();
+        new SizeSelectionDialog(this).show();
         return true;
     }
 
@@ -72,4 +72,3 @@ public class MainActivity extends AppCompatActivity {
         activity.startActivity(intent);
     }
 }
-

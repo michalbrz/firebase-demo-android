@@ -6,28 +6,28 @@ import android.content.SharedPreferences;
 import androidx.appcompat.app.AlertDialog;
 import androidx.preference.PreferenceManager;
 
-class GenderSelectionDialog {
+class SizeSelectionDialog {
 
-    private static final String[] GENDERS = new String[]{"Male", "Female"};
-    private static final String GENDER_PREF_KEY = "gender_pref_key";
+    private static final String[] SIZES = new String[]{"S", "M", "L"};
+    private static final String SIZE_PREF_KEY = "size_pref_key";
 
     private Context context;
 
-    GenderSelectionDialog(Context context) {
+    SizeSelectionDialog(Context context) {
         this.context = context;
     }
 
     void show() {
         new AlertDialog.Builder(context)
-                .setTitle("Select clothes to display")
-                .setItems(GENDERS, (dialog, which) -> saveGenderSelection(GENDERS[which]))
+                .setTitle("Select your size")
+                .setItems(SIZES, (dialog, which) -> saveSizeSelection(SIZES[which]))
                 .create()
                 .show();
     }
 
-    private void saveGenderSelection(String gender) {
+    private void saveSizeSelection(String size) {
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
-        sharedPreferences.edit().putString(GENDER_PREF_KEY, gender).apply();
+        sharedPreferences.edit().putString(SIZE_PREF_KEY, size).apply();
 
         //TODO set Firebase User Property
     }
