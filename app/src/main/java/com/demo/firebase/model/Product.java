@@ -8,7 +8,7 @@ public class Product {
     public final int id;
     public final String name;
     public final int imageId;
-    final double price;
+    public final double price;
     final Category category;
 
     public Product(int id, String name, Category category, double price,
