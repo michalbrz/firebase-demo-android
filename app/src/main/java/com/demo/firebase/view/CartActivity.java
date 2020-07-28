@@ -53,7 +53,7 @@ public class CartActivity extends AppCompatActivity {
 
     // Track the conversion with the purchase subtotal
     private void logPurchase(double subtotal) {
-        //TODO FirebaseAnalytics.Event.ECOMMERCE_PURCHASE
+        //TODO FirebaseAnalytics.Event.PURCHASE
     }
 
     public static void navigate(Activity activity) {
