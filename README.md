@@ -17,8 +17,6 @@ More suggested events for e-commerce app: https://support.google.com/firebase/an
 ### Credits
 https://github.com/liwentao
 
-[asdas][1]
-
   [1]: https://firebase.google.com/docs/reference/android/com/google/firebase/analytics/FirebaseAnalytics.Event#PURCHASE
   [2]: https://firebase.google.com/docs/reference/android/com/google/firebase/analytics/FirebaseAnalytics.Event#VIEW_ITEM
   [3]: https://firebase.google.com/docs/reference/android/com/google/firebase/analytics/FirebaseAnalytics.Event#VIEW_ITEM_LIST
